@@ -2,7 +2,7 @@
 import regex
 from collections import Counter
 #ファイルを読み込む。
-f=open('PHM2_data07.txt')
+f=open('')
 list=f.readlines()
 #空リストの作成。
 wordlist=[]
@@ -15,16 +15,15 @@ from operator import itemgetter
 def sort_mora():
     sort=sorted(wordlist,key=itemgetter(2))
 #結果をファイルへ。
-    f01=open('PHM2_data08.txt','a')
-    print(sort,file=f01)
+    f01=open('','a')
 sort_mora()
 
 #並び替えた結果を読み込んで箇条書きに。
-f02=open('PHM2_data08.txt')
+f02=open('')
 text=f02.read()
 SDIV=regex.compile(r"],")
 def main():
     for rec in SDIV.split(text):
-        f=open('PHM2_data09.txt','a')
+        f=open('','a')
         print(rec,file=f)
 main()
