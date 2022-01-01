@@ -1,5 +1,4 @@
 # coding: utf-8
-from slurp_utf8_01 import slurp_utf8
 import regex
 
 #テキストを読み込んで開く。
