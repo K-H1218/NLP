@@ -1,7 +1,7 @@
 # coding: utf-8
 import regex
 
-file=open('phonology2_test01.txt')
+file=open('')
 text=file.read()
 
 def main():
@@ -15,6 +15,6 @@ def main():
     SDIV=regex.compile(r',')
 #チェッカーをもとに行ごとに分割して表示。
     for rec in SDIV.split(kana_kanji_mora_str):
-        f=open('PHM1_test05.txt','a')
+        f=open('','a')
         print(rec,file=f)
 main()
