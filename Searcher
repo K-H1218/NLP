@@ -3,7 +3,7 @@ from slurp_utf8_01 import slurp_utf8
 import regex
 
 #テキストを読み込んで開く。
-f=open('tsiteiki.txt')
+f=open('')
 text=f.read()
 
 def main():
