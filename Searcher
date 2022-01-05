@@ -12,9 +12,10 @@ def main():
   for rec in SDIV.split(text):
 #検索したい言葉を入力。
     match_word=r''
-#区切ったテキストから検索した言葉を含む文だけ表示。
+     example=open('用例.txt','a') 
+#区切ったテキストから検索した言葉を含む文だけtxtに出力。
     if match_word in rec:
-        print(rec)     
+        print(rec,file=example)        
 main()
 
 #テキストから検索したい言葉の出現数を数える。
