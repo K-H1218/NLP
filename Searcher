@@ -12,7 +12,7 @@ def main():
   for rec in SDIV.split(text):
 #検索したい言葉を入力。
     match_word=r''
-     example=open('用例.txt','a') 
+    example=open('用例.txt','a') 
 #区切ったテキストから検索した言葉を含む文だけtxtに出力。
     if match_word in rec:
         print(rec,file=example)        
