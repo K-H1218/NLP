@@ -6,6 +6,7 @@ f = open('太陽_ver2.txt')
 text = f.read()
 
 m = MeCab.Tagger("-d /usr/local/lib/mecab/dic/UniDic-kindai_1603 -O unidic")
+
 SDIV = regex.compile(r'/')
 sentences = SDIV.split(text)
 for sentence in sentences:
