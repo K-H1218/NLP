@@ -2,7 +2,7 @@
 import regex
 import MeCab
 
-f = open('太陽_ver2.txt')
+f = open('.txt')
 text = f.read()
 
 m = MeCab.Tagger("-d /usr/local/lib/mecab/dic/UniDic-kindai_1603 -O unidic")
@@ -20,7 +20,7 @@ for sentence in sentences:
             Verb = gokan_part[3:5]
             print(Verb,file=hozon)
             
-f = open('ver3.txt')
+f = open('.txt')
 text = f.read()
  
 SDIV = regex.compile(r'\n')
@@ -30,5 +30,5 @@ for S in sentence:
     target = '人文\''
     a = S.find(target)
     b = S[a+len(target):6]
-    hozon = open('ver4.txt','a')
+    hozon = open('.txt','a')
     print(b,file=hozon)
