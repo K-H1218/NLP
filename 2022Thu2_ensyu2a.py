@@ -2,7 +2,7 @@
 import regex
 import MeCab
 
-f=open('torakiyo_nakiama_sentence.txt')
+f=open('work-sentence.txt')
 text=f.read()
 
 SDIV=regex.compile(r'\n')
