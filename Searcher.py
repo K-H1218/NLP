@@ -15,9 +15,10 @@ def main():
     example=open('用例.txt','a') 
 #区切ったテキストから検索した言葉を含む文だけtxtに出力。
     if match_word in rec:
-        print(rec,file=example)        
+        #テキストから検索したい言葉の出現数を数える。
+        word_count=text.count(match_word)
+        print(word_count)
+        print(rec,file=example)    
+     
 main()
 
-#テキストから検索したい言葉の出現数を数える。
-word_count=text.count(r'')
-print(word_count)
