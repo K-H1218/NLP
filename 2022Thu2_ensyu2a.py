@@ -2,7 +2,7 @@
 import regex
 import MeCab
 
-f=open('work-sentence.txt')
+f=open('e.txt')
 text=f.read()
 
 SDIV=regex.compile(r'\n')
@@ -12,12 +12,12 @@ for string in SDIV.split(text):
     mecab_list2=mecab_list1[1:]
     for v1,v2 in zip(mecab_list1,mecab_list2):
         list1=[v1,v2]
-        target='候'
+        target=r'候'
         if target in list1[1]:
             list2=list1[:2]
-            hozon=open('u.txt','a')
+            hozon=open('.txt','a')
             print(list2,file=hozon)
         if target in list1[0]:
             list3=list1[:2]
-            hozon2=open('v.txt','a')
+            hozon2=open('.txt','a')
             print(list3,file=hozon2)
