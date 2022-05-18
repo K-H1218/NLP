@@ -2,7 +2,7 @@
 import regex
 import MeCab
 
-f=open('e.txt')
+f=open('.txt')
 text=f.read()
 
 SDIV=regex.compile(r'\n')
