@@ -23,5 +23,5 @@ for v in SDIV.split(text):
 #もし指定した品詞がリストの最後にあれば。。。
         if target in hinsi[-1]:
 #リストの3番目と4番目（語彙素読みと語彙素）を表示
-            out=hinsi[3:4]
+            out=hinsi[2:4]
             print(out)
