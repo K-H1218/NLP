@@ -3,7 +3,7 @@ import regex
 import MeCab
 
 #ファイルを開いて読み込む（定型）
-f = open('Torakiyo_nakiama_sentence.txt')
+f = open('.txt')
 text = f.read()
 
 #改行を一文の終わりとしてまとめる（コンパイル）チェッカーを作る
