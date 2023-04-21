@@ -1,0 +1,30 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class createName {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		String[] boy = {"ハルト","アオト","リク","ミナト","ハルキ",
+				"ユイト","ハル","アオイ","ソウタ","イツキ"};
+		String[] girl = {"エマ","メイ","サナ","ミオ","イチカ",
+				"ユイ","アオイ","コハル","ツムギ","ヒマリ"};
+		
+        Random random = new Random();
+    	
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("子供の性別を教えてください: ");
+        String sex = scanner.nextLine();
+        
+        if(sex.equals("男の子")) {
+        	String name = boy[random.nextInt(boy.length)];
+        	System.out.println(name + "はどうでしょう");
+        }
+        else if(sex.equals("女の子")) {
+        	String name = girl[random.nextInt(girl.length)];
+        	System.out.println(name + "はどうでしょう");      
+        }
+
+	}
+
+}
